@@ -1,16 +1,16 @@
-#include <stdio.h> //підключення бібліотек
+#include <stdio.h> //подключение библиотек
 #include<locale.h>
 #include<math.h>
 
 
 
 int main(void) {
-    int a; //оголошення локальних змінних
+    int a; //объявления локальных переменных
     int b;
     int c;
     int s;
     int p;
-    setlocale(LC_CTYPE, "eng"); //п1дключення п1дтримки кирилиці української мови//
+    setlocale(LC_CTYPE, "eng"); //подклчючение кириллицы
     printf("\n specify the length of the rock a =");
     scanf("%d", &a);
     printf("\n specify the length of the hypotinus c =");
