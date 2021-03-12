@@ -20,12 +20,12 @@ int main(void) {
     z = (float)pow(x,2)*pow(y,2);
     t = (float)(pow(x,2)+pow(y,2)*2);
     f = (float)((x+y)/2);
-    printf("\t z \n");
-    printf("\t %2.f \n", z);
-    printf("\t t \n");
-    printf("\t %2.f \n", t);
-    printf("\t f \n");
-    printf("\t %2.f \n", f);
+    printf("\t Arithmetic mean of the 1st and 2nd: \n");
+    printf("\t %2.f \n\n", z);
+    printf("\t The difference of the squares of the 1st and 2nd: \n");
+    printf("\t %2.f \n\n", t);
+    printf("\t Product of the 2nd and the sum of numbers: \n");
+    printf("\t %2.f \n\n", f);
     
     return 0;
 
