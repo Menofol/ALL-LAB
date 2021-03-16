@@ -14,9 +14,9 @@ int main(void) {
 
     setlocale(LC_CTYPE, "eng"); //conect cirik
     printf("\n Give x =");
-    scanf("%f", &x);
+    scanf("%d", &x);
     printf("\n Give y =");
-    scanf("%f", &y);
+    scanf("%d", &y);
     z = (float)pow(x,2)*pow(y,2);
     t = (float)(pow(x,2)+pow(y,2)*2);
     f = (float)((x+y)/2);
