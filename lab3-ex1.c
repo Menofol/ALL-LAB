@@ -7,7 +7,6 @@ void red () {
 void white () {
   printf("\033[0;37m");
 }
-
 int main(void) {
     int a;
     float c; //local variable
@@ -33,12 +32,20 @@ int main(void) {
     };
     if (a==2)
         b=(float)(pow(a,2)-4*c)/(a*c);
+    if (a==4)
+        b=(float)(sqrt(a*c-2*a));
+    if  (a==6)
+        b=(float)((c*c)-2*a);
+    printf("\tShorthand for the branch operator if: \033[0;32m%2.f\n", b);
+    white();
+    if (a==2)
+        b=(float)(pow(a,2)-4*c)/(a*c);
     else if (a==4)
         b=(float)(sqrt(a*c-2*a));
     else
         b=(float)((c*c)-2*a);
 
-    printf("\t B = \033[0;32m%2.f", b);
+    printf("\tShorthand for the branch operator if ... else: \033[0;32m%2.f", b);
     white();
     return 0;
 }

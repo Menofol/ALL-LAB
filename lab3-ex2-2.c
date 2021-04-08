@@ -16,9 +16,10 @@ int main()
                 case 7: printf("\t\033[0;32mSunday\033[0;37m"); break;
         }
 
-        if ( n<0 || n>7 )
+        if ( n<1 || n>7 )
         {
-            printf("\tNumber of week must be between \033[0;32m1\033[0;37m and \033[0;32m7\033[0;37m..");
-        };
+                printf("\tNumber of week must be between \033[0;32m1\033[0;37m and \033[0;32m7\033[0;37m..");
+        }
+        
        return 0;
 }

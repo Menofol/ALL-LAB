@@ -32,7 +32,7 @@ int main(void) {
     }
 
     f = (float)((x*x)+log(2)*(x*y)-y*y)/(1+(x*x)+(y*y));
-    printf("\t Function value: \033[0;32m%2.f", f);
+    printf("\t Function value: \033[0;32m%2.2f", f);
     white();
     return 0;
 }
