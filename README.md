@@ -1,1 +1,1 @@
-.. image:: https://img.shields.io/github/followers/menofol?style=social   :alt: GitHub followers
+<img alt="GitHub followers" src="https://img.shields.io/github/followers/menofol?style=social">
