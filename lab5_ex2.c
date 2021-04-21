@@ -83,6 +83,11 @@ int main(void)
          arr[i]= low/2 +rand()%High;
       }
    }
+   int nsum = 0, psum = 0;
+   for(i=0; i<10; i++) {
+     if(arr[i]<0) nsum += arr[i];
+     else psum += arr[i];
+   }
     printf("\n\t\t\t\tResult\n");
     puts("______________________________________________________________\n");
         printf("\tYour array: {");
@@ -98,11 +103,10 @@ int main(void)
         }
         printf("}\n");
         puts("______________________________________________________________\n");
-
+    printf("\tAll Positive numbers sum: \033[0;32m%d\n", psum);
+    white();
     printf("\tSum of given array is: \033[0;32m%d\n", sum(arr, n));
     white();
     EvenOddSum(arr, n);
-
-
     return 0;
 }
