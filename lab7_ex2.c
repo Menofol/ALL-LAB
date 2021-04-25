@@ -44,7 +44,7 @@ void ArrayBetween(int arr[10]) {
     printf("}");
 }
 void random(int arr[10]) {
-        const int Low = 1;
+        const int Low = -100;
         const int High = 100;
         srand(time(0));
         for (int i=0; i<10; i++) {
