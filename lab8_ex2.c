@@ -7,8 +7,7 @@
 void white () {
   printf("\033[0;37m");
 }
-// Function to calculate sum of each row
-void random(int arr[m][n]) {
+void random(int arr[m][n]) { // YOUR RANDOM ARRAY
       const int Low = -100;
       const int High = 100;
       srand(time(0));
@@ -19,19 +18,7 @@ void random(int arr[m][n]) {
       }
       printf("\n\tYour array: ");
 }
-int Entered(int arr[m][n]) {
-      int x;
-      for (int i = 0; i < m; i++) {
-        printf("\n\tWrite row [%d]: \n", i+1);
-            for (int j = 0; j < n; j++) {
-              printf("columns [%d]: ", j+1);
-              scanf("%d", &x);
-              arr[i][j] = x;
-            }
-        }
-      printf("\n\tYour array: ");
-}
-void ArrayBetween(int arr[m][n]) {
+void ArrayBetween(int arr[m][n]) { // OUTPUT YOUR ARRAY
           for (int i=0; i<m; i++) {
           printf("\n|");
         for (int j=0; j<n; j++) {
@@ -45,30 +32,17 @@ void ArrayBetween(int arr[m][n]) {
         }
       }
 }
-int colMaxSum(int mat[m][n])
+int colMaxSum(int mat[m][n]) // FIND MAX OF COLUMN
 {
-    // Variable to store index of column
-    // with maximum
     int idx = -1;
-  
-    // Variable to store max sum
     int maxSum = INT_MIN;
-  
-    // Traverse matrix column wise
     for (int i = 0; i < m; i++) {
         int sum = 0;
-  
-        // calculate sum of column
         for (int j = 0; j < m; j++) {
             sum += mat[j][i];
         }
-  
-        // Update maxSum if it is less than
-        // current sum
         if (sum > maxSum) {
             maxSum = sum;
-  
-            // store index
             idx = i;
         }
     }
@@ -77,7 +51,7 @@ int colMaxSum(int mat[m][n])
     printf("\nHas max sum \033[0;32m%d", maxSum);
     white();
 }
-void enter(int arr[m][n]) {
+void enter(int arr[m][n]) { // YOUR ENTERED ARRAY
         int x;
         for (int i = 0; i < m; i++) {
         printf("\n\tWrite row [%d]: \n", i+1);
@@ -87,14 +61,15 @@ void enter(int arr[m][n]) {
               arr[i][j] = x;
             }
         }
+        printf("\n\tYour array: ");
 }
-void ResultRandom (int arr[m][n]) {
+void ResultRandom (int arr[m][n]) { // END
       random(arr);
       ArrayBetween(arr);
       printf("\n\tResult: ");
       colMaxSum(arr);
 }
-void Entred (int arr[m][n]) {
+void ResultEntred (int arr[m][n]) { // END
       enter(arr);
       ArrayBetween(arr);
       printf("\n\tResult: ");
@@ -113,7 +88,7 @@ int main()
       ResultRandom(arr);
     }
     else if ( v == 2 ) {
-      Entered(arr);
+      ResultEntred(arr);
     }
     else {
       return 0;
