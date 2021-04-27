@@ -72,7 +72,10 @@ int colMaxSum(int mat[m][n])
             idx = i;
         }
     }
-    printf("\nColumn: %d\nHas max sum %d\n", idx, maxSum);
+    printf("\nColumn: \033[0;32m%d", idx);
+    white();
+    printf("\nHas max sum \033[0;32m%d", maxSum);
+    white();
 }
 void enter(int arr[m][n]) {
         int x;
