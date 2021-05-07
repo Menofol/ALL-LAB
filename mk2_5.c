@@ -5,11 +5,13 @@ void white () {
 void NumbersArrangedInDescending ( int arr [10] ) {
  
         int i, j, a, n;
-        printf("Enter the value of N: ");
+        printf("Enter the value of \033[0;31mN\033[0;37m: ");
         scanf("%d", &n);
-        printf("Enter the numbers: ");
-        for (i = 0; i < n; ++i)
-	        scanf("\t%d", &arr[i]);
+        printf("Enter the numbers: \n");
+        for (int i=0; i<n; i++) {
+        printf("a[\033[0;31m%d\033[0;37m] = ", i);
+        scanf("%d", &arr[i]);
+        }
         for (i = 0; i < n; ++i) 
         {
             for (j = i + 1; j < n; ++j) 
