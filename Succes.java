@@ -38,7 +38,7 @@ public class Succes {
                     break;
                 default:
                     i = 1;
-                    System.out.println("Неверный выбор");
+                    System.out.println("Не правильно");
                     break;
             }
         }
@@ -54,7 +54,6 @@ public class Succes {
         System.out.print("Введіть предмет: ");
         String studentSubject = scanner.nextLine();
         student.setSubject(studentSubject);
-        // сохранение данных в текстовый файл Success.txt
 
         try {
             FileWriter fileWriter = new FileWriter("Success.txt", true);
@@ -67,7 +66,6 @@ public class Succes {
             throw new RuntimeException(e); // повертаємо помилку
         }
     }
-    // виведення данних з файлу Success.txt
     public static void showSuccess() {
         try {
             FileReader fileReader = new FileReader("Success.txt");
@@ -81,7 +79,6 @@ public class Succes {
             throw new RuntimeException(e);
         }
     }
-    // арифметическое число всех оценок
     public static void average() {
         try {
             FileReader fileReader = new FileReader("Success.txt");
